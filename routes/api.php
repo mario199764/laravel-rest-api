@@ -23,7 +23,7 @@ route::post('/reset','ResetController@reset');
 //Get balance for existing account
 //GET /balance?account_id=100
 //200 20
-route::get('/balance','BalanceController@show');
+route::get('/balance','App\Http\Controllers\BalanceController@show');
 
 //Withdraw from non-existing account
 //POST /event {"type":"withdraw", "origin":"200", "amount":10}
